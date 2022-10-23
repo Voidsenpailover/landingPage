@@ -146,6 +146,7 @@ h2 {
 .mod-container div img {
     width: 60%;
     transition: transform 0.2s ease-in;
+    box-shadow: .5vw .5vw .5vw black;
 }
 
 .mod-container div img:hover {
