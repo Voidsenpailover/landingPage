@@ -100,28 +100,54 @@ body {
 .blue-text {
     color: rgb(46, 109, 218);
 }
+
 /*Img and text*/
-.img-text-box{
+.img-text-box {
     display: flex;
     padding: 5% 5%;
     gap: 2vw;
     align-items: center;
 }
-.img-text-box div{
+
+.img-text-box div {
     display: block;
     text-align: left;
 }
-.img-text-box div p{
+
+.img-text-box div p {
     font-size: 2vw;
 }
-.img-text-box div H4{
+
+.img-text-box div H4 {
     font-size: 3vw;
     font-weight: bold;
 }
-.img-text-box img{
+
+.img-text-box img {
     width: 40%;
     height: 40%;
+    transition: transform ease-in-out 0.5s;
 }
+.img-text-box img:hover{
+    transform: scale(105%);
+}
+
+/*Img only*/
+.img-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vh 3vw;
+}
+
+.img-box img {
+    width: 40%;
+    transition: transform ease-in-out 0.5s;
+}
+
+.img-box img:hover {
+    transform: scale(110%);
+}
+
 
 /*Button*/
 .button-container {
@@ -239,8 +265,8 @@ body {
     color: black;
 }
 
-@media all and (max-device-width:425px){
-    .button{
+@media all and (max-device-width:425px) {
+    .button {
         font-size: 30px;
     }
 }

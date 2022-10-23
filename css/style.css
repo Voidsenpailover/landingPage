@@ -1,5 +1,6 @@
 * {
     scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -16,8 +17,9 @@ section {
 
 footer {
     display: flex;
-    height: 20vh;
-    background: linear-gradient(0deg, rgb(126, 126, 126), white);
+    width: 100%;
+    background-color: #0c1d2c;
+    ;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -127,6 +129,46 @@ h2 {
     100% {
         opacity: 0;
     }
+}
+
+/*modèles*/
+.mod {
+    text-align: center;
+    justify-content: center;
+    padding: 4vh;
+}
+
+.mod h2 {
+    color: grey;
+    font-size: 3vw;
+}
+
+.mod h3 {
+    font-size: 2vw;
+}
+
+
+.mod-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0vh 5%;
+}
+
+.mod-container div img {
+    width: 60%;
+    transition: transform 0.2s ease-in;
+}
+
+.mod-container div img:hover {
+    transform: scale(110%);
+}
+
+.mod-container div {
+    text-align: center;
+}
+
+.mod-container div p {
+    font-size: 1.5vw;
 }
 
 /*retour en haut de page*/
